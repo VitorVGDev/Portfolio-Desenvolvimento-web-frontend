@@ -1,0 +1,151 @@
+.lab_container {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+
+    max-width: 1300px;
+    padding: 40px;
+    margin: 5rem auto;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+}
+
+.header_text h2{
+    font-weight: 600;
+    color: #CCD6F6;
+}
+
+.header_text span {
+    color: #9857D3;
+}
+
+.text_main {
+    padding: 1rem;
+    color: #CCD6F6;
+    font-size: 1rem;
+
+    background: radial-gradient(
+    circle,
+    #763cac8c 0%,
+    rgba(110, 191, 244, 0.22) 77%,
+    rgba(70, 144, 212, 0) 100%),
+    rgba(255, 255, 255, 0.0); /* fundo translúcido */
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.3px);
+    -webkit-backdrop-filter: blur(12.3px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+}
+
+.project_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project_content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.icons img {
+    margin: 0.5rem;
+    width: 1.8rem;
+}
+
+.project_img_container img {
+    box-shadow: -10px -10px 0px 12px #2B0B3A;
+    border-radius: 0.5rem;
+}
+
+.lab_container div:nth-child(1) .project_img_container {
+    margin-left: -1rem; 
+}
+
+.lab_container div:nth-child(2) .project_img_container {
+    margin-right: -1rem; 
+}
+
+.lab_container div:nth-child(2) .project_img_container img{
+    box-shadow: 10px -11px 0px 12px #2B0B3A;
+    border-radius: 0.5rem;
+}
+
+.lab_container div:nth-child(2) .header_text {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.lab_container div:nth-child(2) .icons {
+    display: flex;
+    justify-content: end;
+}
+
+/* Telas de Tablet */
+@media (max-width: 1024px) {
+    .lab_container {
+        padding: 40px 20px;
+        margin: 3rem auto;
+    }
+
+    .project_img_container img {
+        max-width: 400px; /* Limita o tamanho da imagem para não ficar muito grande */
+        width: 100%;
+        height: auto;
+    }
+
+    .lab_container div:nth-child(1) .project_img_container,
+    .lab_container div:nth-child(2) .project_img_container {
+        margin: 0; /* Remove a margem negativa que pode causar problemas */
+    }
+}
+
+/* Telas de Celular */
+@media (max-width: 768px) {
+    .lab_container {
+        height: auto; /* Permite que a altura se ajuste ao conteúdo */
+        margin: 2rem auto;
+        padding: 20px 15px;
+        gap: 4rem; /* Adiciona um espaço entre os projetos empilhados */
+    }
+
+    .project_container {
+        flex-direction: column; /* Empilha a imagem e o conteúdo */
+        gap: 2rem;
+    }
+
+    /* Inverte a ordem visual no segundo projeto para imagem vir primeiro */
+    .lab_container div:nth-child(2) .project_content {
+        order: 1;
+    }
+    .lab_container div:nth-child(2) .project_img_container {
+        order: 2;
+    }
+
+    .project_img_container img,
+    .lab_container div:nth-child(2) .project_img_container img {
+        box-shadow: none; /* Remove a sombra que não funciona bem em layout de coluna */
+    }
+
+    .text_main {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .header_text h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Centraliza o texto do segundo projeto quando empilhado */
+    .lab_container div:nth-child(2) .header_text,
+    .lab_container div:nth-child(2) .icons {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}

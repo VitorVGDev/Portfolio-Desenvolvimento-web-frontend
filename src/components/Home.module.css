@@ -1,0 +1,211 @@
+.home_container {
+    box-sizing: border-box;
+    max-width: 1300px;
+    margin: auto;
+    color: aliceblue;
+    font-family: "Preahvihear", sans-serif;
+    display: flex;
+    padding: 120px;
+    position: relative;
+    right: -30px;
+    justify-content: center;
+    height: 100vh;
+    gap: 10px;
+}
+
+.person_img {
+    width: 200px;
+}
+
+.img_home_div {
+    position: relative;
+}
+
+.blur {
+    box-shadow: 0 0 120px 100px #6817b3;
+    position: absolute;
+    top: 5.5rem;
+    left: 50%;
+    z-index: -100;
+}
+
+
+.text_home {
+    max-width: 600px;
+    position: relative;
+    top: -5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.presentation_home {
+    position: relative;
+    top: -2rem;
+    left: -1rem;
+}
+
+.curvy_arrow {
+    position: relative;
+    top: 1.6rem;
+    left: -5.3rem;
+    width: 3.75rem;
+}
+
+.text_home p {
+    font-size: 0.875rem;
+}
+
+.top_home_text {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #ffffffc4;
+}
+
+.text_home h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.text_home span {
+    color: var(--span-text);
+}
+
+.footer_home_text {
+    color: rgb(205, 205, 205);
+}
+
+.home_profission {
+    position: relative;
+    font-family: 'Preahvihear', sans-serif;
+    top: 5rem;
+    right: 10.8rem;
+}
+
+.home_profission h1 {
+    font-weight: 100;
+}
+
+.home_profission p {
+    position: relative;
+    top: -1rem;
+    font-size: 0.875rem;
+}
+
+.home_profission img {
+    width: 0.8rem;
+    margin: 0px 3px 0px 5px;
+    vertical-align: middle;
+}
+
+.home_profission span {
+    color: #1877F2;
+}
+
+.home_profission .span_line {
+    color: rgb(255, 255, 255);
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 0.8s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+.text_profission {
+    margin-top: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .home_container {
+        padding: 100px 40px;
+        gap: 30px;
+    }
+    .person_img {
+        width: 200px;
+    }
+    .text_home h1 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .home_container {
+        flex-direction: column;
+        text-align: center;
+        padding: 80px 20px;
+        min-height: auto; 
+        gap: 40px;
+        justify-content: center;
+        margin-right: 3.8rem;
+    }
+
+    .text_home {
+        max-width: 100%;
+        order: 2; 
+        margin-top: 3rem;
+    }
+    .img_home_div {
+        order: 1;
+    }
+    .person_img {
+        display: none;
+    }
+    .presentation_home {
+       display: none;
+    }
+    
+    .blur {
+        box-shadow: 0 0 80px 60px #6817b3;
+    }
+
+    .text_home h1 {
+        font-size: 2rem;
+    }
+    .curvy_arrow { 
+        display: none;
+    }
+
+    .home_profission { /* Ajustar posicionamento */
+        position: static;
+        margin-top: 20px;
+    }
+
+    .home_profission > h1 {
+        font-size: 1.3rem;
+    }
+
+    .home_profission > p {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .home_container {
+        padding: 60px 15px;
+        gap: 30px;
+    }
+    .person_img {
+        display: none;
+    }
+    .blur {
+        position: relative;
+        left: -10rem;
+        top: 0;
+    }
+    .text_home h1 {
+        font-size: 1.6rem;
+    }
+    .text_home p {
+        font-size: 0.9rem;
+    }
+    .home_profission h1 {
+        font-size: 1.1rem;
+    }
+}

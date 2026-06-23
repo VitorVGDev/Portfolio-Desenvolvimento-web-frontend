@@ -1,0 +1,248 @@
+.about2_container {
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 4rem;
+  font-family: 'Preahvihear', sans-serif;
+  box-sizing: border-box;
+}
+
+.about2_content {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.about2_line {
+  border: none;
+  width: 90%;
+  margin: 0 auto 2rem auto;
+}
+
+.about2_content h2 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.cross_functional {
+  color: #A362FF;
+}
+
+.about2_content p {
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.icons_row {
+  display: grid;
+  grid-template-columns: repeat(7, 4rem);
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.icon_circle {
+  width: 50px;
+  height: 50px;
+  background: #251C31;
+  border-radius: 50%;
+  box-shadow: 0 0 12px #a97cf7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.icon_circle img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  display: block;
+}
+
+.icons_row .icon_circle:nth-child(8) {
+    grid-column-start: 2;
+}
+
+.icons_row .icon_circle:nth-child(5) img {
+  width: 1.7rem;
+}
+
+.icons_row .icon_circle:nth-child(10) img {
+  width: 1.7rem;
+} 
+.orbitals {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.central_logo {
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  width: 180px;
+  height: 180px;
+  background: linear-gradient(
+  to bottom,
+  rgba(48, 16, 128) 0%,
+  rgba(67, 29, 140) 84%,
+  rgb(85, 4, 160) 100%
+  );
+  box-shadow: 0 0 12px #a97cf7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.central_logo img {
+  width: 90px;
+  height: 90px;
+  filter: brightness(1.2);
+}
+
+.elipse_gradient {
+  position: absolute;
+  top: 5rem;
+}
+
+.elipse_gradient img {
+  width: 30rem;
+}
+
+.elipses_center {
+  position: absolute;
+  bottom: -2rem;
+}
+
+.bottom_elipses{
+  position: absolute;
+  top: 4rem;
+}
+
+.bottom_elipses img {
+  width: 18rem;
+}
+
+.orbital_icon img {
+  width: 18px;
+  height: 18px;
+}
+
+.lines {
+  position: relative;
+  top: -4.5rem;
+  right: 0.5rem;
+  z-index: -100;
+}
+
+
+/* Media Queries */
+@media (max-width: 900px) {
+    .about2_container {
+        padding: 80px 15px 3rem 15px;
+        min-height: auto;
+    }
+    .about2_content h2 {
+        font-size: 1.8rem;
+    }
+    .about2_content p {
+        font-size: 1rem;
+    }
+    .icons_row img {
+        width: 35px;
+        height: 35px;
+    }
+    .central_logo {
+        width: 140px;
+        height: 140px;
+    }
+    .central_logo img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .elipses_center {
+      top: 10rem;
+    }
+
+    .elipses_center img {
+      width: 30rem;
+    }
+
+    .bottom_elipses{
+      position: absolute;
+      top: 8.7rem;
+    }
+
+    .bottom_elipses img {
+      width: 10rem;
+    }
+
+    .lines {
+      top: -5rem;
+      z-index: -100;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .about2_container {
+        padding: 60px 10px 2rem 10px;
+    }
+    .about2_line {
+        width: 90%;
+        margin-bottom: 1.5rem;
+    }
+    .about2_content h2 {
+        font-size: 1.4rem;
+    }
+    .about2_content p {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+    .icons_row {
+        gap: 0.8rem;
+        margin-bottom: 2rem;
+        margin-left: 0.5rem;
+    }
+    .icons_row img {
+        width: 30px; 
+        height: 30px;
+    }
+
+    .elipses_center {
+      position: absolute;
+      top: 12rem;
+    }
+
+    .elipses_center img{
+      width: 22rem;
+    }
+
+    .bottom_elipses{
+      position: absolute;
+      top: 8.7rem;
+    }
+
+    .bottom_elipses img {
+      width: 10rem;
+    }
+  }

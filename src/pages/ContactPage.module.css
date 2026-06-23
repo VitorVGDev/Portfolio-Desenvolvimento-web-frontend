@@ -1,0 +1,50 @@
+.contactPage {
+  min-height: 60vh;
+  display: grid;
+  place-items: center;
+  padding: 4rem 1.5rem;
+  color: #fff;
+  font-family: 'Preahvihear', sans-serif;
+}
+
+.card {
+  width: min(42rem, 100%);
+  padding: 2rem;
+  border-radius: 1.25rem;
+  background: linear-gradient(135deg, rgba(58, 18, 88, 0.95), rgba(18, 8, 35, 0.98));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #c59eff;
+  margin-bottom: 0.75rem;
+}
+
+.card h1 {
+  margin-bottom: 1rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.card p {
+  line-height: 1.7;
+  color: #e9defb;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.actions a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.8rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.06);
+}
